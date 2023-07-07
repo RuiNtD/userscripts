@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         !bang Anywhere
 // @namespace    https://github.com/RuiNtD
-// @version      1.0.1
+// @version      1.0.2
 // @description  Use DuckDuckGo !bangs (almost) anywhere
 // @author       RuiNtD
 // @match        https://*.google.com/search?*
@@ -26,7 +26,7 @@ if (query.indexOf("!") >= 0) {
     format: "json",
     no_redirect: "1",
   });
-  GM.xmlhttpRequest({
+  GM.xmlHttpRequest({
     url: "https://duckduckgo.com/?" + apiParams,
     responseType: "json",
     onload: function ({ response }) {
