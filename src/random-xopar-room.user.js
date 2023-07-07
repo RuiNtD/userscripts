@@ -20,6 +20,7 @@ btn.addEventListener("click", () => {
   for (var i = 0; i < 20; i++)
     id += chars.charAt(Math.floor(Math.random() * chars.length));
 
+  /** @type {HTMLInputElement} */
   const roomID = document.querySelector("#room_id");
   roomID.value = id;
   roomID.dispatchEvent(new MouseEvent("input"));

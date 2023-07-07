@@ -1,0 +1,8 @@
+env:
+  browser: true
+  es2021: true
+extends:
+  - prettier
+  - plugin:userscripts/recommended
+parserOptions:
+  ecmaVersion: latest

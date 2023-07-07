@@ -16,7 +16,7 @@
 // ==/UserScript==
 
 const $ = document.querySelector.bind(document);
-const url = new URL(location);
+const url = new URL(location.href);
 const { searchParams: params } = url;
 const query = params.get("q") || params.get("query") || $("input#q").value;
 console.log("!bA", query);
