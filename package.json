@@ -1,9 +1,9 @@
 {
   "devDependencies": {
-    "@types/tampermonkey": "^4.0.10",
-    "eslint": "^8.44.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-userscripts": "^0.3.0",
+    "@types/tampermonkey": "^5.0.4",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-userscripts": "^0.5.6",
     "prettier": "^3.0.0"
   }
 }
