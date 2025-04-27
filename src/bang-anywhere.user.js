@@ -11,7 +11,7 @@
 // @match        https://*.startpage.com/*/search*
 // @icon         https://icons.duckduckgo.com/ip2/duckduckgo.com.ico
 // @grant        GM_getResourceText
-// @resource bangs https://duckduckgo.com/bang.js
+// @resource     bangs https://duckduckgo.com/bang.js
 // @license      MIT
 // ==/UserScript==
 
