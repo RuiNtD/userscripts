@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "declaration": false,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "lib": ["DOM", "ES6", "DOM.Iterable", "ScriptHost", "ESNext"],
+    "checkJs": true,
+    "noEmit": true
+  },
+  "include": ["src/**/*", "rollup.config.ts"]
+}

@@ -1,14 +1,55 @@
 {
+  "scripts": {
+    "prepare": "husky",
+    "dev": "rollup -wc",
+    "clean": "del-cli dist",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "ci": "run-s lint",
+    "build:js": "rollup -c --configPlugin @rollup/plugin-typescript",
+    "build": "cross-env NODE_ENV=production run-s ci clean build:js"
+  },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-typescript": "^7.27.0",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.25.1",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/node": "^22.15.2",
     "@types/tampermonkey": "^5.0.4",
+    "cross-env": "^7.0.3",
+    "del-cli": "^6.0.0",
     "eslint": "^9.25.1",
     "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-prettier": "^5.2.6",
     "eslint-plugin-userscripts": "^0.5.6",
     "globals": "^16.0.0",
+    "husky": "^9.1.7",
     "jiti": "^2.4.2",
-    "prettier": "^3.5.3"
+    "lint-staged": "^15.5.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.5.3",
+    "read-package-up": "^11.0.0",
+    "rollup": "^4.40.0",
+    "rollup-plugin-userscript": "^0.3.7",
+    "typescript-eslint": "^8.31.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.0",
+    "@violentmonkey/url": "^0.1.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.css": [
+      "prettier --write"
+    ]
   }
 }
