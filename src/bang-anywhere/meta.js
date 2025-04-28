@@ -12,7 +12,7 @@
 // @noframes
 // @homepageURL  https://greasyfork.org/scripts/469625
 // @icon         https://icons.duckduckgo.com/ip2/duckduckgo.com.ico
-// @require      https://cdn.jsdelivr.net/npm/@violentmonkey/url
+// @require      https://cdn.jsdelivr.net/npm/@violentmonkey/url@0
 // @resource     bangs https://duckduckgo.com/bang.js
 // @license      MIT
 // ==/UserScript==
