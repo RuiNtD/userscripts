@@ -2,7 +2,7 @@
 // @name         !bangAnywhere
 // @namespace    https://github.com/RuiNtD
 // @version      1.1.3
-// @description  Use DuckDuckGo !bangs (almost) anywhere
+// @description  Use DuckDuckGo !bangs on your preferred search engine
 // @author       RuiNtD
 // @match        https://*.google.com/search?*
 // @match        https://*.bing.com/search?*
