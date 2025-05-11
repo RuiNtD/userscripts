@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         !bangAnywhere
 // @namespace    https://github.com/RuiNtD
-// @version      1.1.2
+// @version      1.1.3
 // @description  Use DuckDuckGo !bangs (almost) anywhere
 // @author       RuiNtD
 // @match        https://*.google.com/search?*

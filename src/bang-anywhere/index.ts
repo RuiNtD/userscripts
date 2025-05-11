@@ -1,11 +1,14 @@
 import "./meta.js?userscript-metadata";
 import { onNavigate } from "@violentmonkey/url";
 
-// Only load bangs into memory when needed
-let bangs = null;
-function preloadBangs() {
-  if (bangs) return;
-  bangs = JSON.parse(GM_getResourceText("bangs"));
+interface Bang {
+  c: string; // category
+  d: string; // domain
+  r: number; // ranking
+  s: string; // title
+  sc: string; // sub-category
+  t: string; // trigger
+  u: string; // url
 }
 
 // Modified from https://github.com/t3dotgg/unduck
@@ -15,7 +18,7 @@ function getBangUrl(query: string): string | undefined {
   const bangTag = match?.[1]?.toLowerCase();
   if (!bangTag) return;
 
-  preloadBangs();
+  const bangs: Bang[] = JSON.parse(GM_getResourceText("bangs"));
   const bang = bangs.find((b) => b.t == bangTag);
   if (!bang) return null;
 

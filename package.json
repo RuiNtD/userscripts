@@ -7,7 +7,7 @@
     "lint:fix": "eslint --fix",
     "ci": "run-s lint",
     "build:js": "rollup -c --configPlugin @rollup/plugin-typescript",
-    "build": "cross-env NODE_ENV=production run-s ci clean build:js"
+    "build": "run-s ci clean build:js"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.26.10",
@@ -22,7 +22,6 @@
     "@rollup/plugin-typescript": "^12.1.2",
     "@types/node": "^22.15.2",
     "@types/tampermonkey": "^5.0.4",
-    "cross-env": "^7.0.3",
     "del-cli": "^6.0.0",
     "eslint": "^9.25.1",
     "eslint-config-prettier": "^10.1.2",
